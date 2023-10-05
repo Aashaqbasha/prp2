@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <script>   
+        function loginfun() {   
+        window.open("login.html");  
+        }   
+    </script>
+    <script>   
+        function dashboard1() {   
+        window.open("dash.html");  
+        }   
+    </script>
+</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            align-items: center;
+            max-width: 600px;
+            height: 450px;
+            margin: 0 auto;
+            padding: 120px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color:yellowgreen;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .signupcla{
+            text-align: center;
+            color:green
+           
+        }
+        .but{
+            background-color: white;
+            color: yellowgreen;
+        }
+        
+    </style>
+
+<body>
+    <div class="container">
+        <h1 class="signupcla">Signup</h1>
+        <p>Choose your signup method:</p>
+        <button id="google-signup">Continue with Google</button>
+        <p>Or</p>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button type="submit" onclick="dashboard1()">Signup with Username and Password</button>
+            <h3>Already have an account?<button class="but" onclick="loginfun()"><h2>Login</h2></but></h3>
+        </form>
+    </div>
+</body>
+</html>

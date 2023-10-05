@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>   
+        function signupfun() {   
+        window.open("signup.html");  
+        }   
+        </script> 
+    <script>   
+            function logfun() {   
+            window.open("login.html");  
+            }   
+    </script> 
+</head>
+    
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            
+        }
+        
+        .top-frame {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:7%;
+            background-color:palevioletred;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2; 
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu a {
+            color:black;
+            text-decoration: none;
+            position: relative;
+            padding: 0 15px; 
+        }
+        .menu a:hover {
+            background-color: white
+        }
+        .bottom-frame {
+            padding-top: 70px; 
+            z-index: 2;
+        }
+        .content {
+            display: none;
+            padding: 20px;
+        }
+        .content.active {
+            display: block;
+        }
+        .logo {
+            margin-left: 20px;
+        }
+        .title {
+            margin-right: auto;
+            font-family: Arial;
+            font-size: 30px;
+            color:white
+             
+        }
+        .highlight-line {
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+        
+        .bottom-image {
+            width: 100%; 
+            height: 650px; 
+            background-color: rgba(28, 27, 27, 0.5);
+            
+            
+           
+        }
+       .Data-div{
+       margin-left:30px;
+       font-size:60px;
+       margin-bottom:0;
+    }
+      text{padding:10px}
+
+      .image-text {
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color:rgb(20, 83, 10);
+            z-index: 1;
+            padding: 10px 20px;
+        
+      }
+    
+     .scrolling-text {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scrolling-text 20s linear infinite; 
+        }
+        @keyframes scrolling-text {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .abouthead{
+            color:palevioletred;
+            text-align: center;
+        }
+        .aboutcont{
+            color:black;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service-card {
+            width: 300px;
+            
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        
+    
+        .testimonial {
+            display: flex;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+        .client-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .client-info {
+            flex: 1;
+        }
+        .client-name {
+            font-weight: bold;
+            color:green
+        }
+        .maxwidth{
+            max-width: 100%;
+        }
+        .process-div{
+            max-width:100%;
+            align-items: center;
+        }
+        .process-con{
+            max-width: 100%;
+            text-align: center;
+        }
+        .conta {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color:goldenrod;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+
+
+    </style>
+<body>
+    <div class="maxiwidth">
+    <div class="top-frame">
+        <!--<div class="logo">
+            <img src="C:\Users\Aashaq\OneDrive\Desktop\logo.jfif" alt="Your Logo" height="75px"> -->
+        <div class="title">
+            Student Inconvenience Reporting System 
+        </div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#About">About</a>
+            <a href="#services">Services</a>
+            <button onclick="logfun()">Login</button>
+        </div>
+        <div class="highlight-line"></div>
+    </div>
+    <div class="bottom-frame">
+        <img class="bottom-image" src="C:\Users\Aashaq\OneDrive\Desktop\focused-tiny-people-reading-books\5836.jpg" alt="Bottom Image"> 
+        <div class="image-text">
+        <p><h1>Report Your Issues Online</h1></p>
+        <p><h3>we'll help you to resolve them</h3></p>
+        <button onclick="signupfun()">get strated</button>
+
+        </div>
+    </div>
+    <div class="abouthead">
+    <h1>About</h1></div>
+    <div class="aboutcont">
+        <p><h4>The Student Inconvenience Reporting System is a dedicated platform designed to empower students 
+            and enhance their college experience by providing a convenient and efficient means of 
+            reporting problems, concerns, and inconveniences they may encounter while on campus. 
+            This system serves as a bridge between students and college authorities, facilitating
+             open communication and quick resolution of issues.</h4></p> 
+             
+        <p>User-Friendly Interface: The system is designed with a user-friendly interface to ensure that students of all technical backgrounds can easily navigate and use the platform.
+
+            Multichannel Reporting: Students can report issues through multiple channels, including text, images, videos, or by simply describing the problem. This flexibility allows for more comprehensive reporting.
+            
+            Categorization of Issues: The system categorizes reported issues, making it easier for college authorities to prioritize and address them efficiently. Common categories may include academic concerns, facilities and maintenance, safety, and more.
+            
+            Notification System: Students receive notifications and updates on the status of their reports, keeping them informed about the progress of issue resolution.
+            
+            Data Analytics: The platform collects data on reported issues, allowing colleges to analyze trends and patterns, ultimately leading to proactive improvements in campus facilities and services.</p>
+    </div>
+    <br>
+    <br>
+    <h1 style="text-align: center;color: palevioletred">Our Services</h1>
+    <div class="container">
+        <div class="service-card">
+            <h2>24/7 Reporting</h2>
+            <img src="C:\Users\Aashaq\OneDrive\Desktop\service24.jpg" alt="24/7 Reporting" height="400px" width="300px"> 
+            <p>Report your issues anytime, day or night.</p>
+        </div>
+        
+        <div class="service-card">
+            <h2>Fast Response Time</h2>
+            <img src="C:\Users\Aashaq\OneDrive\Desktop\reponse.png" alt="Fast Response Time" height="400px" width="300px">
+            <p>We respond to your concerns promptly.</p>
+        </div>
+        
+        <div class="service-card">
+            <h2>Anonymous Reporting</h2>
+            <img src="C:\Users\Aashaq\OneDrive\Desktop\anonymous.jfif" alt="Anonymous Reporting" height="400px" width="300px">
+            <p>Your identity remains confidential.</p>
+        </div>
+    </div>
+    <h1 style="text-align: center;color:palevioletred">Process Involved</h1>
+    <div class="process-con">
+    <img class="process-div" src="C:\Users\Aashaq\OneDrive\Desktop\process.jpg"></div><br><br>
+    <h1 style="text-align: center; color:palevioletred">Our Clients</h1>
+    <div class="container">
+        <div class="testimonial">
+            <img class="client-image" src="C:\Users\Aashaq\OneDrive\Desktop\client2.jpg" alt="Client 1">
+            <div class="client-info">
+                <p class="client-name">John </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nullam a metus sit amet ligula feugiat malesuada.
+                    Etiam non libero id ipsum malesuada tempus. Suspendisse volutpat libero ut commodo varius.</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img class="client-image" src="C:\Users\Aashaq\OneDrive\Desktop\client1.jpg" alt="Client 2">
+            <div class="client-info">
+                <p class="client-name">siri</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a metus sit amet ligula feugiat malesuada.Etiam non libero id ipsum malesuada tempus. Suspendisse volutpat libero ut commodo varius.</p>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+</body>
+</html>
